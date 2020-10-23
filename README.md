@@ -1,4 +1,4 @@
-# Simple Geocoding Service FastAPI
+# Simple Geocoding Service using FastAPI
 A simple API which will returns the latitude and longitude for each requests using FastAPI
 
 ## Introduction
