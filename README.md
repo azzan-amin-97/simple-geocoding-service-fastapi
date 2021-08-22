@@ -1,5 +1,5 @@
 # Simple Geocoding Service using FastAPI
-A simple API which will returns the latitude and longitude for each requests using FastAPI
+A simple API which will returns the latitude and longitude for each requests using FastAPI and <a href="https://github.com/symerio/pgeocode">Pgeocode</a> Library
 
 ## Introduction
 This is a simple geocoding service API project using python. One of the library package used for this API is pgeocode. Pgeocode is a python package that provides postal geocoding service. The goal of this API is to mock the large geocoding microservice in order to understand how the API works.
