@@ -1,4 +1,4 @@
-# Simple Geocoding Service using FastAPI
+# FastAPI Simple Geocoding Service
 A simple API which will returns the latitude and longitude for each requests using FastAPI and <a href="https://github.com/symerio/pgeocode">Pgeocode</a> Library
 
 ## Introduction
