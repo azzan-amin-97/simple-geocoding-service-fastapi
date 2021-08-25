@@ -16,14 +16,16 @@ class Address(BaseModel):
 
 @app.get('/')
 def index():
-    return {'msg': 'Welcome to Simple Geocoding Service'}
+    return {'message': 'Welcome to Simple Geocoding Service'}
 
 
+# Get all geocoded addresses
 @app.get('/addresses')
 def get_addresses():
     return db
 
 
+# Geocode Address
 @app.post('/geocode')
 def geocode_address(address: Address):
     nomi = pgeocode.Nominatim(address.country)
@@ -40,20 +42,20 @@ def geocode_address(address: Address):
 
     return results
 
-
+# Get Address based on ID
 @app.get('/addresses/{address_id}')
 def get_address(address_id: int):
     results = db[address_id]
     return results
 
-
+# Delete Address
 @app.delete('/addresses/{address_id}')
 def get_address(address_id: int):
     db.pop(address_id)
     return {}
 
 
-# Models
+# Check if address posted already existed
 def findExistingAddress(new_address):
     result = {}
     for address in db:
